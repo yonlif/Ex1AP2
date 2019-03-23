@@ -11,6 +11,7 @@ namespace Excercise_1
         public ComposedMission(string name)
         {
             Name = name;
+            Type = "Composed";
         }
 
         public event EventHandler<double> OnCalculate;
@@ -26,6 +27,7 @@ namespace Excercise_1
             {
                 value = func(value);
             }
+            if (OnCalculate != null) OnCalculate(this, value);
             return value;
         }
 

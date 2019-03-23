@@ -12,6 +12,7 @@ namespace Excercise_1
         {
             this.Name = name;
             this.func = func;
+            Type = "Single";
         }
 
         public event EventHandler<double> OnCalculate;
@@ -22,7 +23,9 @@ namespace Excercise_1
         
         public double Calculate(double value)
         {
-            return func(value);
+            double result = func(value);
+            if (OnCalculate != null) OnCalculate(this, result);
+            return result;
         }
     }
 }

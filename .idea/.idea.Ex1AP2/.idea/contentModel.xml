@@ -6,7 +6,10 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Ex1AP2" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="ComposedMission.cs" t="Include" />
         <e p="Ex1AP2.csproj" t="IncludeRecursive" />
+        <e p="IMission.cs" t="Include" />
+        <e p="MissionContainer.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -15,6 +18,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="SingleMission.cs" t="Include" />
       </e>
       <e p="Ex1AP2.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
